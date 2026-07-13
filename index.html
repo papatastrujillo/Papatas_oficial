@@ -10,81 +10,97 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#111;
-color:white;
+color:#fff;
+line-height:1.6;
 }
 
 header{
+height:100vh;
 background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1600&q=80');
+url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
-.logo{
-width:180px;
-border-radius:50%;
-border:4px solid #FFD700;
-margin-bottom:20px;
-}
-
-h1{
+header h1{
 font-size:60px;
 color:#FFD700;
+margin-bottom:15px;
 }
 
 header p{
 font-size:22px;
-margin:20px;
+margin-bottom:30px;
 }
 
 .boton{
 background:#c1121f;
+color:white;
 padding:15px 35px;
+text-decoration:none;
+border-radius:30px;
+font-size:20px;
+font-weight:bold;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
 color:white;
 text-decoration:none;
-border-radius:40px;
-font-size:20px;
+margin:0 15px;
+font-weight:bold;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
 }
 
-.titulo{
-text-align:center;
-font-size:40px;
+h2{
 color:#FFD700;
-margin-bottom:40px;
+margin-bottom:20px;
+text-align:center;
+font-size:36px;
 }
-
-.galeria{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+  .hero{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
+margin-top:30px;
 }
 
 .card{
-background:#222;
-width:300px;
+background:#1f1f1f;
 border-radius:15px;
 overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.5);
 transition:.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:translateY(-8px);
 }
 
 .card img{
@@ -95,69 +111,40 @@ object-fit:cover;
 
 .card h3{
 padding:15px;
-text-align:center;
 color:#FFD700;
+text-align:center;
 }
 
 .card p{
 padding:0 15px 20px;
 text-align:center;
 }
-  .menu{
-width:90%;
-max-width:900px;
-margin:auto;
+
+table{
+width:100%;
 border-collapse:collapse;
-background:white;
-color:black;
+margin-top:20px;
+background:#fff;
+color:#000;
 }
 
-.menu th{
-background:#c1121f;
+th{
+background:#8B0000;
 color:white;
-padding:15px;
+padding:12px;
 }
 
-.menu td{
-padding:15px;
+td{
+padding:12px;
 border-bottom:1px solid #ddd;
 text-align:center;
 }
 
-.contacto{
-background:#1b1b1b;
-text-align:center;
-padding:60px 20px;
-}
-
-.contacto h2{
-color:#FFD700;
-margin-bottom:20px;
-font-size:38px;
-}
-
-.contacto p{
-font-size:20px;
-margin:10px;
-}
-
 footer{
-background:black;
-padding:20px;
+background:#000;
 text-align:center;
-font-size:18px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 22px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+padding:25px;
+margin-top:40px;
 }
 
 </style>
@@ -165,51 +152,80 @@ font-weight:bold;
 
 <body>
 
-<header>
+<nav>
+<a href="#historia">Historia</a>
+<a href="#mision">Misión</a>
+<a href="#vision">Visión</a>
+<a href="#menu">Carta</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-<img src="LOGO_AQUI" class="logo">
+<header>
 
 <h1>Pa'Patas Restobar Grill</h1>
 
-<p>Las mejores parrillas, alitas y bebidas de Trujillo.</p>
+<p>El mejor sabor en parrillas, alitas y bebidas.</p>
 
-<a href="#menu" class="boton">Ver Menú</a>
+<a href="#menu" class="boton">Ver Carta</a>
 
 </header>
 
-<section>
+<section id="historia">
 
-<h2 class="titulo">Nuestros Productos</h2>
+<h2>Nuestra Historia</h2>
 
-<div class="galeria">
+<p>
+Pa'Patas Restobar Grill nació con el objetivo de ofrecer deliciosas parrillas, alitas y bebidas en un ambiente acogedor para compartir con familiares y amigos. Nos esforzamos por brindar productos de calidad y una excelente atención a cada cliente.
+</p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80">
-<h3>Alitas BBQ</h3>
-<p>Jugosas alitas con salsa BBQ.</p>
-</div>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
-<h3>Parrillas</h3>
-<p>Carnes preparadas a la parrilla.</p>
-</div>
+<section id="mision">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=800&q=80">
-<h3>Gaseosas</h3>
-<p>Bebidas heladas para acompañar tu comida.</p>
-</div>
+<h2>Misión</h2>
 
-</div>
+<p>
+Brindar alimentos de calidad y una atención amable, ofreciendo el mejor sabor en cada parrilla.
+</p>
+
+</section>
+<section id="vision">
+
+<h2>Visión</h2>
+
+<p>
+Ser una de las parrillas más reconocidas de Trujillo por su excelente sabor, calidad en sus productos y un servicio que supere las expectativas de nuestros clientes.
+</p>
 
 </section>
 
 <section id="menu">
 
-<h2 class="titulo">Menú</h2>
+<h2>Nuestra Carta</h2>
 
-<table class="menu">
+<div class="hero">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80">
+<h3>Parrillas Mixtas</h3>
+<p>Carnes a la parrilla con el mejor sabor.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=900&q=80">
+<h3>Alitas BBQ</h3>
+<p>Alitas crocantes con deliciosas salsas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=900&q=80">
+<h3>Bebidas</h3>
+<p>Gaseosas bien heladas para acompañar tu comida.</p>
+</div>
+
+</div>
+
+<table>
 
 <tr>
 <th>Producto</th>
@@ -217,72 +233,69 @@ font-weight:bold;
 </tr>
 
 <tr>
-<td>Alitas BBQ</td>
-<td>S/22.00</td>
+<td>Pa'Patas 1 Mix (2 personas)</td>
+<td>S/ 66.00</td>
 </tr>
 
 <tr>
-<td>Parrilla Mixta</td>
-<td>S/45.00</td>
+<td>Pa'Patas 2 Mix (4 personas)</td>
+<td>S/ 122.00</td>
 </tr>
 
 <tr>
-<td>Gaseosa Personal</td>
-<td>S/6.00</td>
+<td>Pa'Patas 3 Mix (6 personas)</td>
+<td>S/ 212.00</td>
 </tr>
 
 <tr>
-<td>Papas Fritas</td>
-<td>S/12.00</td>
+<td>Pa'Patas 4 Mix (10 personas)</td>
+<td>S/ 330.00</td>
+</tr>
+
+<tr>
+<td>6 Alitas</td>
+<td>S/ 17.00</td>
+</tr>
+
+<tr>
+<td>8 Alitas</td>
+<td>S/ 23.00</td>
+</tr>
+
+<tr>
+<td>12 Alitas</td>
+<td>S/ 34.00</td>
+</tr>
+
+<tr>
+<td>20 Alitas</td>
+<td>S/ 52.00</td>
 </tr>
 
 </table>
 
 </section>
-<section>
+<section id="contacto">
+    <h2>Contáctanos</h2>
 
-<h2 class="titulo">¿Quiénes Somos?</h2>
+    <p><strong>📍 Dirección:</strong> Av. América Sur, Trujillo - La Libertad</p>
+    <p><strong>📞 Teléfono:</strong> +51 987 654 321</p>
+    <p><strong>✉️ Correo:</strong> contacto@papatas.com</p>
 
-<div style="max-width:900px;margin:auto;text-align:center;font-size:20px;line-height:1.8;">
-<p>
-En <strong>Pa'Patas Restobar Grill</strong> nos especializamos en ofrecer deliciosas parrillas, alitas, papas fritas y bebidas en un ambiente agradable para compartir con familiares y amigos. Nuestro compromiso es brindar productos de calidad, excelente atención y una experiencia única para cada cliente.
-</p>
-</div>
+    <h3>Síguenos en nuestras redes</h3>
+    <ul>
+        <li>Facebook: Pa'Patas Parrillería</li>
+        <li>Instagram: @papatasparrilleria</li>
+        <li>WhatsApp: +51 987 654 321</li>
+    </ul>
 
+    <h3>Horario de atención</h3>
+    <p>Lunes a Domingo</p>
+    <p>5:00 p.m. - 11:00 p.m.</p>
 </section>
-
-<section class="contacto">
-
-<h2>Contáctanos</h2>
-
-<p>📍 Av. Salvador Lara N.° 527, Urb. Las Quintanas, Trujillo</p>
-
-<p>📞 Celular: 922 026 818</p>
-
-<p>💬 WhatsApp: 987 150 821</p>
-
-<p>📘 Facebook: Pa'Patas</p>
-
-<p>📷 Instagram: @papatas.restobar</p>
-
-<p>🕕 Horario: Lunes a Domingo<br>6:00 p.m. – 11:00 p.m.</p>
-
-</section>
-
-<a class="whatsapp"
-href="https://wa.me/51987150821"
-target="_blank">
-💬 Pedir por WhatsApp
-</a>
 
 <footer>
-
-<h3>Pa'Patas Restobar Grill</h3>
-
-<p>¡Gracias por visitarnos!</p>
-
-<p>© 2026 Todos los derechos reservados.</p>
-
+    <p>&copy; 2025 Pa'Patas Parrillería. Todos los derechos reservados.</p>
 </footer>
 
 </body>
