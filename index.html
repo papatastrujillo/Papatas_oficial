@@ -1,14 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pa' Patas Parrillas</title>
 
-<link rel="stylesheet" href="style.css">
+<title>Pa' Patas Restobar</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:#000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+position:sticky;
+top:0;
+}
+
+.logo h1{
+color:#ff3b3b;
+font-size:38px;
+}
+
+.logo p{
+letter-spacing:4px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff3b3b;
+}
+
+.banner{
+
+height:90vh;
+
+background:url("https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding-left:8%;
+
+}
+
+.banner div{
+
+background:rgba(0,0,0,.6);
+
+padding:35px;
+
+border-radius:15px;
+
+width:500px;
+
+}
+
+.banner h2{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+.banner p{
+
+margin-bottom:25px;
+
+font-size:20px;
+
+}
+
+.btn{
+
+background:#d62828;
+
+padding:15px 30px;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+section{
+
+padding:80px;
+
+}
+
+section h2{
+
+color:#ff3b3b;
+
+margin-bottom:20px;
+
+text-align:center;
+
+font-size:35px;
+
+}
+
+</style>
 
 </head>
 
@@ -17,48 +146,57 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <header>
 
 <div class="logo">
+
 <h1>PA' PATAS</h1>
-<p>PARRILLAS</p>
+
+<p>RESTOBAR</p>
+
 </div>
 
 <nav>
 
-<a href="#inicio">Inicio</a>
 <a href="#historia">Historia</a>
+
 <a href="#mision">Misión</a>
+
 <a href="#vision">Visión</a>
-<a href="#carta">Carta</a>
+
+<a href="#menu">Carta</a>
+
 <a href="#contacto">Contacto</a>
 
 </nav>
 
 </header>
 
-<section class="banner" id="inicio">
+<section class="banner">
 
-<div class="texto">
+<div>
 
-<h2>EL MEJOR SABOR EN CADA PLATO</h2>
+<h2>El auténtico sabor de la parrilla</h2>
 
 <p>
-Parrillas, alitas y bebidas preparadas especialmente para ti.
+
+Disfruta las mejores parrillas, alitas y bebidas.
+
 </p>
 
-<a href="#carta" class="boton">
-Ver Nuestra Carta
+<a href="#menu" class="btn">
+
+Ver Carta
+
 </a>
 
 </div>
 
 </section>
-
 <section id="historia">
 
-<h2>Historia</h2>
+<h2>📖 Nuestra Historia</h2>
 
 <p>
 
-Pa' Patas Parrillas nació con el propósito de ofrecer deliciosas parrillas, alitas y bebidas en un ambiente familiar. Nuestro compromiso es brindar calidad, excelente atención y un sabor que haga volver a nuestros clientes.
+Pa' Patas Restobar nació con el propósito de reunir a familias y amigos alrededor del mejor sabor de la parrilla. Desde nuestros inicios nos hemos caracterizado por preparar cada plato con ingredientes frescos, carnes seleccionadas y una atención cordial, ofreciendo un ambiente acogedor donde cada visita se convierte en una experiencia especial.
 
 </p>
 
@@ -66,11 +204,11 @@ Pa' Patas Parrillas nació con el propósito de ofrecer deliciosas parrillas, al
 
 <section id="mision">
 
-<h2>Misión</h2>
+<h2>🎯 Misión</h2>
 
 <p>
 
-Brindar alimentos preparados con ingredientes de calidad, ofreciendo una excelente atención y un ambiente agradable para todos nuestros clientes.
+Brindar a nuestros clientes parrillas, alitas y bebidas de excelente calidad, preparadas con ingredientes frescos y acompañadas de una atención amable, ofreciendo un ambiente cómodo y familiar que haga de cada visita un momento inolvidable.
 
 </p>
 
@@ -78,394 +216,151 @@ Brindar alimentos preparados con ingredientes de calidad, ofreciendo una excelen
 
 <section id="vision">
 
-<h2>Visión</h2>
+<h2>👁️ Visión</h2>
 
 <p>
 
-Ser uno de los restaurantes de parrillas más reconocidos por la calidad de nuestros productos y el excelente servicio al cliente.
+Ser un restobar reconocido por la calidad de nuestros productos, el excelente servicio y la innovación en nuestros platos, convirtiéndonos en la primera opción para quienes buscan disfrutar de una deliciosa parrilla en un ambiente agradable.
 
 </p>
 
 </section>
 
-<section id="carta">
-
-<h2>Nuestra Carta</h2>
-
-<div class="contenedor">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
-
-<h3>Parrillas Mixtas</h3>
-
-<ul>
-
-<li>Pa' Patas 1 Mix (2 personas) ........ S/66.00</li>
-
-<li>Pa' Patas 2 Mix (4 personas) ........ S/122.00</li>
-
-<li>Pa' Patas 3 Mix (6 personas) ........ S/212.00</li>
-
-<li>Pa' Patas 4 Mix (10 personas) ...... S/330.00</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7">
-
-<h3>Alitas</h3>
-
-<ul>
-
-<li>6 piezas ............. S/17.00</li>
-
-<li>8 piezas ............. S/23.00</li>
-
-<li>12 piezas ........... S/34.00</li>
-
-<li>20 piezas ........... S/52.00</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1527960471264-932f39eb5846">
-
-<h3>Bebidas</h3>
-
-<ul>
-
-<li>Gaseosa 300 ml</li>
-
-<li>Cerveza artesanal</li>
-
-<li>Pilsen Callao 305 ml</li>
-
-<li>Consultar precio</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contacto">
-
-<h2>Contáctanos</h2>
-
-<p><i class="fa-solid fa-phone"></i> 987150821</p>
-
-<p><i class="fa-solid fa-phone"></i> 912026818</p>
-
-<p><i class="fa-brands fa-instagram"></i> patatas.restobar</p>
-
-<p><i class="fa-brands fa-facebook"></i> Pa' Patas</p>
-
-<p><i class="fa-solid fa-clock"></i> Lunes a Domingo - 6:00 p.m. a 11:00 p.m.</p>
-
-</section>
-
-<a
-class="whatsapp"
-href="https://wa.me/51987150821"
-target="_blank">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Pedir por WhatsApp
-
-</a>
-
-<footer>
-
-<p>
-
-© 2026 Pa' Patas Parrillas - Todos los derechos reservados.
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#111;
-    color:#fff;
-    line-height:1.6;
-}
-
-header{
-    background:#000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    border-bottom:3px solid #d40000;
-}
-
-.logo h1{
-    color:#ff2b2b;
-    font-size:38px;
-}
-
-.logo p{
-    color:#fff;
-    letter-spacing:4px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#ff2b2b;
-}
-
-.banner{
-    height:90vh;
-    background:url("https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
-    display:flex;
-    align-items:center;
-    padding-left:80px;
-}
-
-.texto{
-    background:rgba(0,0,0,.65);
-    padding:35px;
-    border-radius:15px;
-    max-width:550px;
-}
-
-.texto h2{
-    font-size:55px;
-    color:#fff;
-    margin-bottom:20px;
-}
-
-.texto p{
-    font-size:22px;
-    margin-bottom:30px;
-}
-
-.boton{
-    background:#e60000;
-    color:white;
-    text-decoration:none;
-    padding:15px 35px;
-    border-radius:30px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.boton:hover{
-    background:white;
-    color:#d40000;
-}
-
-section{
-    padding:70px;
-}
-
-section h2{
-    text-align:center;
-    color:#ff2b2b;
-    font-size:40px;
-    margin-bottom:35px;
-}
+<style>
 
 #historia,
 #mision,
 #vision{
-    background:#1a1a1a;
-    margin:20px;
-    border-radius:15px;
-    border-left:5px solid red;
+
+background:#1c1c1c;
+
+margin:30px auto;
+
+max-width:1100px;
+
+border-radius:15px;
+
+padding:35px;
+
+box-shadow:0 0 15px rgba(255,0,0,.25);
+
 }
 
 #historia p,
 #mision p,
 #vision p{
-    font-size:20px;
-    text-align:center;
+
+font-size:18px;
+
+text-align:center;
+
+line-height:1.8;
+
 }
 
-.contenedor{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-}
+</style>
+<section id="menu">
 
-.card{
-    width:340px;
-    background:#1d1d1d;
-    border:2px solid red;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.4s;
-}
+<h2>🍽️ Nuestra Carta</h2>
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px red;
-}
+<div class="contenedor">
 
-.card img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-}
+<div class="card">
 
-.card h3{
-    text-align:center;
-    color:#ff2b2b;
-    margin:15px;
-}
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Parrilla">
 
-.card ul{
-    list-style:none;
-    padding:20px;
-}
+<h3>🥩 Parrillas Mixtas</h3>
 
-.card li{
-    padding:10px 0;
-    border-bottom:1px solid #444;
-}
+<p>Pa' Patas 1 Mix (2 personas)</p>
+<h4>S/ 66.00</h4>
+
+<p>Pa' Patas 2 Mix (4 personas)</p>
+<h4>S/ 122.00</h4>
+
+<p>Pa' Patas 3 Mix (6 personas)</p>
+<h4>S/ 212.00</h4>
+
+<p>Pa' Patas 4 Mix (10 personas)</p>
+<h4>S/ 330.00</h4>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" alt="Alitas">
+
+<h3>🍗 Alitas</h3>
+
+<p>6 piezas</p>
+<h4>S/ 17.00</h4>
+
+<p>8 piezas</p>
+<h4>S/
+    <section id="contacto">
+
+<h2>📞 Contáctanos</h2>
+
+<div class="contacto">
+
+<p><i class="fa-solid fa-phone"></i> 987 150 821</p>
+
+<p><i class="fa-solid fa-phone"></i> 912 026 818</p>
+
+<p><i class="fa-brands fa-instagram"></i> Instagram: @patatas.restobar</p>
+
+<p><i class="fa-brands fa-facebook"></i> Facebook: Pa' Patas</p>
+
+<p><i class="fa-solid fa-clock"></i> Horario de atención</p>
+
+<p>Lunes a Domingo</p>
+
+<p>6:00 p. m. – 11:00 p. m.</p>
+
+<a class="whatsapp"
+href="https://wa.me/51987150821"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Escríbenos por WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>PA' PATAS RESTOBAR</h3>
+
+<p>Las mejores parrillas, alitas y bebidas.</p>
+
+<p>© 2026 Todos los derechos reservados.</p>
+
+</footer>
+
+<style>
 
 #contacto{
-    text-align:center;
-    background:#000;
+
+background:#1c1c1c;
+
+text-align:center;
+
+padding:70px 20px;
+
 }
 
-#contacto p{
-    margin:15px;
-    font-size:20px;
-}
+.contacto p{
 
-.whatsapp{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 25px;
-    border-radius:40px;
-    font-size:18px;
-    font-weight:bold;
-    box-shadow:0 0 15px rgba(0,0,0,.4);
-}
-
-.whatsapp:hover{
-    background:#1ebe57;
-}
-
-footer{
-    background:#0a0a0a;
-    text-align:center;
-    padding:25px;
-    border-top:2px solid red;
-}
-
-footer p{
-    color:#ccc;
-}
-
-@media(max-width:900px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-.banner{
-padding:20px;
-height:auto;
-}
-
-.texto h2{
-font-size:38px;
-}
-
-.texto p{
 font-size:18px;
-}
 
-section{
-padding:40px 20px;
-}
+margin:12px 0;
 
 }
-document.addEventListener("DOMContentLoaded", () => {
 
-    // Animación al hacer scroll
-    const elementos = document.querySelectorAll("section, .card");
+.contacto i{
 
-    const mostrar = () => {
-        elementos.forEach((elemento) => {
-            const posicion = elemento.getBoundingClientRect().top;
-            const pantalla = window.innerHeight;
-
-            if (posicion < pantalla - 100) {
-                elemento.style.opacity = "1";
-                elemento.style.transform = "translateY(0)";
-                elemento.style.transition = "all 0.8s ease";
-            }
-        });
-    };
-
-    elementos.forEach((elemento) => {
-        elemento.style.opacity = "0";
-        elemento.style.transform = "translateY(50px)";
-    });
-
-    mostrar();
-    window.addEventListener("scroll", mostrar);
-
-    // Mensaje de bienvenida
-    setTimeout(() => {
-        alert("🍖 ¡Bienvenido a Pa' Patas Parrillas! Te esperamos para disfrutar el mejor sabor en cada plato.");
-    }, 1000);
-
-    // Desplazamiento suave del menú
-    document.querySelectorAll("nav a").forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-
-            const destino = document.querySelector(this.getAttribute("href"));
-
-            destino.scrollIntoView({
-                behavior: "smooth"
-            });
-        });
-    });
-
-});
+color:#
+    
