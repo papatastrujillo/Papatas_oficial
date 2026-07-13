@@ -1,302 +1,81 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pa'Patas Restobar Grill</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#111;
-color:#fff;
-line-height:1.6;
-}
-
-header{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-header h1{
-font-size:60px;
-color:#FFD700;
-margin-bottom:15px;
-}
-
-header p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.boton{
-background:#c1121f;
-color:white;
-padding:15px 35px;
-text-decoration:none;
-border-radius:30px;
-font-size:20px;
-font-weight:bold;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:#000;
-padding:15px;
-text-align:center;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-h2{
-color:#FFD700;
-margin-bottom:20px;
-text-align:center;
-font-size:36px;
-}
-  .hero{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.card{
-background:#1f1f1f;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,.5);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card h3{
-padding:15px;
-color:#FFD700;
-text-align:center;
-}
-
-.card p{
-padding:0 15px 20px;
-text-align:center;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-background:#fff;
-color:#000;
-}
-
-th{
-background:#8B0000;
-color:white;
-padding:12px;
-}
-
-td{
-padding:12px;
-border-bottom:1px solid #ddd;
-text-align:center;
-}
-
-footer{
-background:#000;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
-</style>
-</head>
-
-<body>
-
-<nav>
-<a href="#historia">Historia</a>
-<a href="#mision">Misión</a>
-<a href="#vision">Visión</a>
-<a href="#menu">Carta</a>
-<a href="#contacto">Contacto</a>
-</nav>
-
-<header>
-
-<h1>Pa'Patas Restobar Grill</h1>
-
-<p>El mejor sabor en parrillas, alitas y bebidas.</p>
-
-<a href="#menu" class="boton">Ver Carta</a>
-
-</header>
-
-<section id="historia">
+<!-- NOSOTROS -->
+<section id="nosotros" class="container">
 
 <h2>Nuestra Historia</h2>
 
 <p>
-Pa'Patas Restobar Grill nació con el objetivo de ofrecer deliciosas parrillas, alitas y bebidas en un ambiente acogedor para compartir con familiares y amigos. Nos esforzamos por brindar productos de calidad y una excelente atención a cada cliente.
+Pa' Patas Parrillas nació con el propósito de ofrecer un lugar donde familiares y amigos puedan disfrutar de las mejores parrillas y alitas en un ambiente agradable. Cada plato es preparado con ingredientes frescos, recetas especiales y la pasión por brindar un sabor único que haga de cada visita una experiencia inolvidable.
 </p>
-
-</section>
-
-<section id="mision">
 
 <h2>Misión</h2>
 
 <p>
-Brindar alimentos de calidad y una atención amable, ofreciendo el mejor sabor en cada parrilla.
+Brindar una experiencia gastronómica de calidad, ofreciendo parrillas, alitas y bebidas elaboradas con ingredientes frescos, acompañadas de una atención amable, rápida y eficiente que supere las expectativas de nuestros clientes.
 </p>
-
-</section>
-<section id="vision">
 
 <h2>Visión</h2>
 
 <p>
-Ser una de las parrillas más reconocidas de Trujillo por su excelente sabor, calidad en sus productos y un servicio que supere las expectativas de nuestros clientes.
+Ser el restobar de parrillas preferido por nuestros clientes, reconocido por la excelencia en nuestros productos, la calidad del servicio y el compromiso de crear momentos especiales para cada persona que nos visita.
 </p>
 
 </section>
 
-<section id="menu">
+<!-- CARTA -->
+<section id="carta" class="container">
 
 <h2>Nuestra Carta</h2>
 
-<div class="hero">
+<h3>🥩 Parrillas Mixtas</h3>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80">
-<h3>Parrillas Mixtas</h3>
-<p>Carnes a la parrilla con el mejor sabor.</p>
-</div>
+<ul>
+<li>Pa' Patas 1 Mix (2 personas) - S/ 66.00</li>
+<li>Pa' Patas 2 Mix (4 personas) - S/ 122.00</li>
+<li>Pa' Patas 3 Mix (6 personas) - S/ 212.00</li>
+<li>Pa' Patas 4 Mix (10 personas) - S/ 330.00</li>
+</ul>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=900&q=80">
-<h3>Alitas BBQ</h3>
-<p>Alitas crocantes con deliciosas salsas.</p>
-</div>
+<h3>🍗 Alitas</h3>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=900&q=80">
-<h3>Bebidas</h3>
-<p>Gaseosas bien heladas para acompañar tu comida.</p>
-</div>
+<ul>
+<li>6 piezas - S/ 17.00</li>
+<li>8 piezas - S/ 23.00</li>
+<li>12 piezas - S/ 34.00</li>
+<li>20 piezas - S/ 52.00</li>
+</ul>
 
-</div>
+<h3>🥤 Bebidas</h3>
 
-<table>
-
-<tr>
-<th>Producto</th>
-<th>Precio</th>
-</tr>
-
-<tr>
-<td>Pa'Patas 1 Mix (2 personas)</td>
-<td>S/ 66.00</td>
-</tr>
-
-<tr>
-<td>Pa'Patas 2 Mix (4 personas)</td>
-<td>S/ 122.00</td>
-</tr>
-
-<tr>
-<td>Pa'Patas 3 Mix (6 personas)</td>
-<td>S/ 212.00</td>
-</tr>
-
-<tr>
-<td>Pa'Patas 4 Mix (10 personas)</td>
-<td>S/ 330.00</td>
-</tr>
-
-<tr>
-<td>6 Alitas</td>
-<td>S/ 17.00</td>
-</tr>
-
-<tr>
-<td>8 Alitas</td>
-<td>S/ 23.00</td>
-</tr>
-
-<tr>
-<td>12 Alitas</td>
-<td>S/ 34.00</td>
-</tr>
-
-<tr>
-<td>20 Alitas</td>
-<td>S/ 52.00</td>
-</tr>
-
-</table>
+<ul>
+<li>Gaseosa 300 ml</li>
+<li>Cerveza Artesanal</li>
+<li>Pilsen Callao 305 ml</li>
+<li>Consultar otras bebidas disponibles.</li>
+</ul>
 
 </section>
-<section id="contacto">
-    <h2>Contáctanos</h2>
 
-    <p><strong>📍 Dirección:</strong> Av. Salvador Lara 527, Urb. Las Quintanas, Trujillo</p>
-    <p><strong>📞 Teléfono:</strong> 987 150 821</p>
-    <p><strong>📱 Número de celular:</strong> 912 026 818</p>
-    <p><strong>💬 WhatsApp:</strong> 912 026 818</p>
+<!-- CONTACTO -->
+<section id="contacto" class="container">
 
-    <h3>Síguenos en nuestras redes</h3>
-    <ul>
-        <li>Facebook: Pa'Patas Parrillería</li>
-        <li>Instagram: @papatas.restobar</li>
-    </ul>
+<h2>Contáctanos</h2>
 
-    <h3>Horario de atención</h3>
-    <p>Lunes a Domingo</p>
-    <p>5:00 p.m. - 11:00 p.m.</p>
+<p><strong>Horario:</strong> Lunes a Domingo | 6:00 p.m. - 11:00 p.m.</p>
+
+<p><strong>Instagram:</strong> @patatas.restobar</p>
+
+<p><strong>Facebook:</strong> Pa' Patas</p>
+
+<p>
+<a href="https://wa.me/51987150821" target="_blank">
+📱 WhatsApp: 987 150 821
+</a>
+</p>
+
+<p>
+<a href="https://wa.me/51912026818" target="_blank">
+📱 WhatsApp: 912 026 818
+</a>
+</p>
+
 </section>
-
-<footer>
-    <p>&copy; 2025 Pa'Patas Parrillería. Todos los derechos reservados.</p>
-</footer>
-
-</body>
-</html>
